@@ -97,7 +97,11 @@
         <section class="subscriptions" id="form">
             <div class="subscription-title">
                 <h2>Scamify</h2>
-                <p>Fill the form</p>
+                <p id="text_sorry">We are sorry to see you leave our quality streaming service. 
+                    <br>Your satisfaction is our priority, and we strive to provide the best experience possible. 
+                    <br>If you truly wish to cancel your subscription and request a refund, please fill out the following form. 
+                    <br> Your feedback is invaluable to us as we continue to improve our service for our valued customers.
+                    <br><br> Thank you for your support.</p>
             </div>
         
             <form class="form" action="./rick.html" method="GET" onsubmit="return validateForm()">
@@ -116,7 +120,7 @@
         
                 <div class="input-container ic2">
                     <label for="tel" class="placeholder">Phone <span style="color: red;">*</span></label>
-                    <input id="tel" class="input" name="tel" type="tel" placeholder="+33612345678" pattern="^\+33\d{9}$" title="Please enter your phone number" required>
+                    <input id="tel" class="input" name="tel" type="tel" placeholder="+33612345678" pattern="^\+33\d{9}$" title="Please enter your phone number" value="+33" required>
                     <div class="cut"></div>
                 </div>
         
