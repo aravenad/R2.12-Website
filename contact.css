@@ -20,8 +20,6 @@
   grid-column: span 2; /* Username spans both columns */
 }
 
-
-
 .input-container.ic2 {
   grid-column: span 1; /* Each input spans one column */
 }
@@ -40,7 +38,7 @@
 }
 
 label {
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   margin-bottom: 5px;
 }
@@ -58,18 +56,16 @@ label {
   width: 100%;
   grid-column: span 2; /* Submit button spans both columns */
   margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 .submit:active {
   background-color: #06b;
 }
 
-
 .submit:hover {
   background-color: #06b;
 }
-
-
 
 .small-input {
   width: 100%; /* Ensures small inputs fit the grid */
