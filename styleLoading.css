@@ -6,7 +6,7 @@
 }
 :root {
 	--hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
+	--bg: #fff; /* Updated background color */
 	--fg: hsl(var(--hue),10%,10%);
 	--primary: hsl(var(--hue),90%,55%);
 	--trans-dur: 0.3s;
@@ -14,7 +14,7 @@
 }
 body {
 	background-color: var(--bg);
-	color: var(--fg);
+	color: #232224;
 	font: 1em/1.5 "DM Sans", sans-serif;
 	height: 100vh;
 	display: grid;
@@ -82,7 +82,7 @@ body {
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: hsl(var(--hue),10%,10%);
+		--bg: #fff; /* Updated background color */
 		--fg: hsl(var(--hue),10%,90%);
 	}
 	.cart__track {
