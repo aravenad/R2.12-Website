@@ -1,490 +1,509 @@
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  html {
-    scrollbar-gutter: stable;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    padding: 60px 0;
-    margin: 0;
-    font-size: 13pt;
-    scrollbar-gutter: stable;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #3b5998;
-    cursor: pointer;
-  }
-  
-  section {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  section blockquote {
-    padding: 10px 15px;
-    border-radius: 6px;
-    background: #f2f2f2;
-    margin: 0 0 20px 0;
-    width: 100%;
-    border-left: 5px solid #3b5998;
-  }
-  
-  section article {
-    box-shadow: 0 0 10px #00000030;
-    border-radius: 6px;
-    margin: 20px 0;
-  }
-  
-  nav {
-    background: #232224;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 6px;
-  }
-  
-  nav .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  nav .logo a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-  }
-  
-  nav .logo a.icon-logo {
-    font-size: 1.5rem;
-    line-height: 1;
-    color: #3b5998;
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-  nav .logo a.icon-logo img {
-    width: 202px;
-    height: 58px;
-  }
-  
-  .block {
-    display: block;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  
-  .italic {
-    font-style: italic;
-  }
-  
-  .dropdown-container {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .dropdown-container .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-container .dropdown[open] .with-down-arrow::after {
-    content: "\e5c7";
-  }
-  
-  .dropdown-container .dropdown[open] summary {
-    background: #ffffff10;
-  }
-  
-  .dropdown-container .dropdown summary {
-    list-style: none;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  
-  .dropdown-container .dropdown summary.avatar {
-    border-radius: 50px;
-  }
-  
-  .dropdown-container .dropdown summary.avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    display: inline-block;
-    margin: 0;
-  }
-  
-  .dropdown-container .dropdown summary.with-down-arrow {
-    display: inline-flex;
-    padding: 5px;
-    align-items: center;
-    color: #fff;
-    line-height: 1;
-  }
-  
-  .dropdown-container .dropdown summary.with-down-arrow::after {
-    content: "\e5c5";
-    font-family: "Material Symbols Outlined";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.5rem;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  .dropdown-container .dropdown.left ul {
-    left: 0;
-  }
-  
-  .dropdown-container .dropdown.right ul {
-    right: 0;
-  }
-  
-  .dropdown-container .dropdown ul {
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 0 10px #00000030;
-    min-width: max-content;
-    position: absolute;
-    top: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-    z-index: 2;
-  }
-  
-  .dropdown-container .dropdown ul li {
-    list-style-type: none;
-    display: block;
-  }
-  
-  .dropdown-container .dropdown ul li:first-of-type {
-    border: none;
-    background-color: #f2f2f2;
-  }
-  
-  .dropdown-container .dropdown ul li p {
-    padding: 10px 15px;
-    margin: 0;
-  }
-  
-  .dropdown-container .dropdown ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 15px;
-    text-decoration: none;
-    line-height: 1;
-    color: #333;
-  }
-  
-  .dropdown-container .dropdown ul li a:hover {
-    color: #3b5998;
-  }
-  
-  .dropdown-container .dropdown ul li:first-of-type {
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .dropdown-container .dropdown ul li:last-of-type {
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .dropdown-container .dropdown ul li.divider {
-    border: none;
-    border-bottom: 1px solid #333;
-  }
-  
-  .dropdown-container .dropdown ul li.divider ~ li {
-    border: none;
-  }
-  
-  .dropdown-container .dropdown ul li a svg {
-    margin-right: 5px;
-  }
+html {
+  scrollbar-gutter: stable;
+}
 
-  section.hero {
-    width: 80%;
-    height: 84vh;
-    text-align: center;
-    margin-bottom: 150px;
-    background-color: #232224;
-    border-radius: 6px;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 60px 0 0 0;
+  margin: 0;
+  font-size: 13pt;
+  scrollbar-gutter: stable;
+}
 
-  section.hero_account {
-    width: 80%;
-    height: 200vh;
-    text-align: center;
-    margin-bottom: 150px;
-    background-color: #232224;
-    border-radius: 6px;
-  }
+a {
+  text-decoration: none;
+  color: #3b5998;
+  cursor: pointer;
+}
 
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+section {
+  width: 80%;
+  margin: 0 auto;
+}
 
-  .hero-title_account {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-  }
+section blockquote {
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: #f2f2f2;
+  margin: 0 0 20px 0;
+  width: 100%;
+  border-left: 5px solid #3b5998;
+}
 
-  .hero-title h1, .hero-title_account h1 {
-    font-size: 7rem;
-    color: #fff;
-    margin: 0 0 30px 0;
-    padding: 0;
-  }
+section article {
+  box-shadow: 0 0 10px #00000030;
+  border-radius: 6px;
+  margin: 20px 0;
+}
 
-  .hero-title p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+nav {
+  background: #232224;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
 
-  .hero-button {
-    height: 64px;
-    font: normal normal 700 1em/4em Arial,sans-serif;
-    overflow: hidden;
-    width: 200px;
-    background-color: #3b5998;
-    border-radius: 20px;
-  }
+nav .logo {
+  display: flex;
+  align-items: center;
+}
 
-  .hero-button:hover {
-    background-color: #003D60;
-  }
+nav .logo a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+}
 
-  .hero-button a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-  }
+nav .logo a.icon-logo {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #3b5998;
+}
 
-  .hero-button a:hover {
-    text-decoration: none;
-  }
+nav .logo a.icon-logo img {
+  width: 202px;
+  height: 58px;
+}
 
-  .hero-button .first-link {
-    margin-top: 0em;
-  }
+.block {
+  display: block;
+}
 
-  .hero-button, .first-link {
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
+.bold {
+  font-weight: bold;
+}
 
-  .hero-button:hover .first-link {
-    margin-top: -4em;
-  }
+.italic {
+  font-style: italic;
+}
 
-  section.subscriptions {
-    width: 80%;
-    height: 120vh;
-    text-align: center;
-    background-color: #232224;
-    border-radius: 6px;
-  }
+.dropdown-container {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
 
-  section.subscriptions div.subscription-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-  }
+.dropdown-container .dropdown {
+  position: relative;
+}
 
-  section.subscriptions div.subscription-title h2 {
-    font-size: 3rem;
-    color: #fff;
-    margin: 0 0 30px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown[open] .with-down-arrow::after {
+  content: "\e5c7";
+}
 
-  section.subscriptions div.subscription-title p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown[open] summary {
+  background: #ffffff10;
+}
 
-  section.subscriptions div.subscription-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    height: 70%;
-  }
+.dropdown-container .dropdown summary {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+}
 
-  section.subscriptions div.subscription-cards div.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    height: 700px;
-    background-color: #fff;
-    border-radius: 6px;
-    margin: 0 20px;
-    box-shadow: 0 0 10px #00000030;
-  }
+.dropdown-container .dropdown summary.avatar {
+  border-radius: 50px;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.dropdown-container .dropdown summary.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-title h3 {
-    font-size: 2rem;
-    color: #3b5998;
-    margin: 0 0 30px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown summary.with-down-arrow {
+  display: inline-flex;
+  padding: 5px;
+  align-items: center;
+  color: #fff;
+  line-height: 1;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-title p {
-    font-size: 1.5rem;
-    color: #3b5998;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown summary.with-down-arrow::after {
+  content: "\e5c5";
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-price {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+.dropdown-container .dropdown.left ul {
+  left: 0;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-price h4 {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown.right ul {
+  right: 0;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-price p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown ul {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 10px #00000030;
+  min-width: max-content;
+  position: absolute;
+  top: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 2;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 55%;
-  }
+.dropdown-container .dropdown ul li {
+  list-style-type: none;
+  display: block;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.dropdown-container .dropdown ul li:first-of-type {
+  border: none;
+  background-color: #f2f2f2;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-features ul li {
-    font-size: 1.5rem;
-    color: #3b5998;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
+.dropdown-container .dropdown ul li p {
+  padding: 10px 15px;
+  margin: 0;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-button {
-    font: normal normal 700 1em/4em Arial,sans-serif;
-    overflow: hidden;
-    width: 200px;
-    background-color: #3b5998;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-  }
+.dropdown-container .dropdown ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 15px;
+  text-decoration: none;
+  line-height: 1;
+  color: #333;
+}
 
-  section.subscriptions div.subscription-cards div.card div.basic {
-    background-color: #3b5998;
-  }
+.dropdown-container .dropdown ul li a:hover {
+  color: #3b5998;
+}
 
-  section.subscriptions div.subscription-cards div.card div.pro {
-    background-color: #003D60;
-  }
+.dropdown-container .dropdown ul li:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
 
-  section.subscriptions div.subscription-cards div.card div.enterprise {
-    background-color: #3b5998;
-  }
+.dropdown-container .dropdown ul li:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-button:hover, div.basic {
-    background-color: #003D60;
-  }
+.dropdown-container .dropdown ul li.divider {
+  border: none;
+  border-bottom: 1px solid #333;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-button:hover, div.pro {
-    background-color: #3b5998;
-  }
+.dropdown-container .dropdown ul li.divider ~ li {
+  border: none;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-button:hover, div.enterprise {
-    background-color: #003D60;
-  }
+.dropdown-container .dropdown ul li a svg {
+  margin-right: 5px;
+}
 
-  section.subscriptions div.subscription-cards div.card div.card-button a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-  }
-  
-  .go-top-button {
-    display: block; /* Show the button as a block element */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    width: 54px; /* Set a specific width */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #3b5998; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    text-align: center; /* Center text */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.5s, visibility 0.5s; /* Smooth transition for visibility and opacity */
-    visibility: hidden; /* Initially hidden */
-  }
-  
-  .go-top-button.show {
-    opacity: 1; /* Fully visible */
-    visibility: visible; /* Ensure the button is visible */
-  }
-  
-  .go-top-button:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
-  
+section.hero {
+  width: 80%;
+  height: 84vh;
+  text-align: center;
+  margin-bottom: 150px;
+  background-color: #232224;
+  border-radius: 6px;
+}
+
+section.hero_account {
+  width: 80%;
+  height: 200vh;
+  text-align: center;
+  margin-bottom: 150px;
+  background-color: #232224;
+  border-radius: 6px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-title_account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.hero-title h1,
+.hero-title_account h1 {
+  font-size: 7rem;
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.hero-title p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.hero-button {
+  height: 64px;
+  font: normal normal 700 1em/4em Arial, sans-serif;
+  overflow: hidden;
+  width: 200px;
+  background-color: #3b5998;
+  border-radius: 20px;
+}
+
+.hero-button:hover {
+  background-color: #003d60;
+}
+
+.hero-button a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.hero-button a:hover {
+  text-decoration: none;
+}
+
+.hero-button .first-link {
+  margin-top: 0em;
+}
+
+.hero-button,
+.first-link {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero-button:hover .first-link {
+  margin-top: -4em;
+}
+
+section.subscriptions {
+  width: 80%;
+  height: 120vh;
+  text-align: center;
+  background-color: #232224;
+  border-radius: 6px;
+  margin-bottom: 150px;
+}
+
+section.subscriptions div.subscription-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+section.subscriptions div.subscription-title h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-title p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  height: 70%;
+}
+
+section.subscriptions div.subscription-cards div.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 0 20px;
+  box-shadow: 0 0 10px #00000030;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-title h3 {
+  font-size: 2rem;
+  color: #3b5998;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-title p {
+  font-size: 1.5rem;
+  color: #3b5998;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-price h4 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-price p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-features ul li {
+  font-size: 1.5rem;
+  color: #3b5998;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-button {
+  font: normal normal 700 1em/4em Arial, sans-serif;
+  overflow: hidden;
+  width: 200px;
+  background-color: #3b5998;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+section.subscriptions div.subscription-cards div.card div.basic {
+  background-color: #3b5998;
+}
+
+section.subscriptions div.subscription-cards div.card div.pro {
+  background-color: #003d60;
+}
+
+section.subscriptions div.subscription-cards div.card div.enterprise {
+  background-color: #3b5998;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-button:hover,
+div.basic {
+  background-color: #003d60;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-button:hover,
+div.pro {
+  background-color: #3b5998;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-button:hover,
+div.enterprise {
+  background-color: #003d60;
+}
+
+section.subscriptions div.subscription-cards div.card div.card-button a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.go-top-button {
+  display: block; /* Show the button as a block element */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  width: 54px; /* Set a specific width */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3b5998; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  text-align: center; /* Center text */
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s, visibility 0.5s; /* Smooth transition for visibility and opacity */
+  visibility: hidden; /* Initially hidden */
+}
+
+.go-top-button.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Ensure the button is visible */
+}
+
+.go-top-button:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+  width: 80%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00000030;
+  background: #232224;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+}
