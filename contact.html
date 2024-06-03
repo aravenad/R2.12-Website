@@ -1,178 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="contact.css">
-        <script src="script.js"></script>
-        <title>Scamify</title>
-    </head>
-    <body>
-        <section>
-            <article>
-                <nav>
-                    <!-- START: Logo Container -->
-                    <div class="logo">
-                        <a href="index.html" class="icon-logo">
-                            <img href="index.html" src="logo_size4.png" alt="logo">
-                        </a>        
-                    </div>
-                    <!-- END: Logo Container -->
-        
-                    <!-- START: Dropdown Container -->
-                    <div class="dropdown-container">
-                        <details class="dropdown right">
-                            <summary class="avatar">
-                                <img src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp">
-                            </summary>
-                            <ul>
-                                <!-- User details area w/ gray bg -->
-                                <li>
-                                    <p>
-                                        <span class="block bold">Jane Doe</span>
-                                        <span class="block italic">jane@example.com</span>
-                                    </p>
-                                </li>
-                                <!-- Menu links -->
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                                        </svg>
-                                        Account
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
-                                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
-                                        </svg> 
-                                        Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                                        </svg> 
-                                        Help
-                                    </a>
-                                </li>
-                                <!-- Divider -->
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-                                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-                                        </svg> 
-                                        Logout
-                                    </a>
-                                </li>
-                            </ul>
-                        </details>
-                    </div>
-                    <!-- END: Dropdown Container -->
-                </nav>
-            </article>
-        </section>
-        
-        <!-- START: Hero Section -->
-        <section class="hero">
-            <div class="hero-title">
-                <h1>Contact</h1>
-                <p>24/7 online support !</p>
-                <div class="hero-button">
-                    <a href="#form">Ask for a refund</a>
-                </div>
-            </div>
-        </section>
-        <!-- END: Hero Section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <script src="./script.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <section>
+      <article>
+        <nav>
+          <!-- START: Logo Container -->
+          <div class="logo">
+            <a href="index.html" class="icon-logo">
+              <img src="logo_size4.png" alt="logo" />
+            </a>
+          </div>
+          <!-- END: Logo Container -->
 
-        <!-- START: Subscriptions Section -->
-        <section class="contact-container" id="form">
-            <div class="contact-title">
-                <h2>Scamify</h2>
-                <p id="text_sorry">We are sorry to see you leave our quality streaming service. 
-                    <br>Your satisfaction is our priority, and we strive to provide the best experience possible. 
-                    <br>If you truly wish to cancel your subscription and request a refund, please fill out the following form. 
-                    <br> Your feedback is invaluable to us as we continue to improve our service for our valued customers.
-                    <br><br> Thank you for your support.</p>
-            </div>
-        
-            <form class="form" action="./rick.html" method="GET" onsubmit="return validateForm()">
-                <div class="input-container ic1">
-                    <label for="username" class="placeholder">Username <span style="color: red;">*</span></label>
-                    <input id="username" class="input" type="text" name="username" placeholder="JohnDoe" title="Please enter your username" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic2">
-                    <label for="email" class="placeholder">Email <span style="color: red;">*</span></label>
-                    <input id="email" class="input" name="email" type="email" placeholder="john@example.com" title="Please enter your email" required>
-                    <div class="cut"></div>
-                </div>
-        
-        
-                <div class="input-container ic2">
-                    <label for="tel" class="placeholder">Phone <span style="color: red;">*</span></label>
-                    <input id="tel" class="input" name="tel" type="tel" placeholder="+33612345678" pattern="^\+33\d{9}$" title="Please enter your phone number" value="+33" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic2">
-                    <label for="address" class="placeholder">Address <span style="color: red;">*</span></label>
-                    <input id="address" class="input" name="address" type="text" placeholder="123 Scam St." title="Please enter your address" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic2">
-                    <label for="postalcode" class="placeholder">Postal Code <span style="color: red;">*</span></label>
-                    <input id="postalcode" class="input small-input" name="postalcode" type="text" placeholder="75001" pattern="\d{5}" title="Please enter your postal code" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic2">
-                    <label for="region" class="placeholder">Region <span style="color: red;">*</span></label>
-                    <input id="region" class="input" name="region" type="text" placeholder="Ile-de-France" title="Please enter your region" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic2">
-                    <label for="country" class="placeholder">Country <span style="color: red;">*</span></label>
-                    <input id="country" class="input" name="country" type="text" placeholder="France" title="Please enter your country" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic1">
-                    <label for="ssn" class="placeholder">Social Security Number <span style="color: red;">*</span></label>
-                    <input id="ssn" class="input" name="ssn" type="text" placeholder="1234567890123" pattern="\d{13}" title="Please enter your social security number" required>
-                    <div class="cut"></div>
-                </div>
-        
-                <div class="input-container ic1">
-                    <button class="submit" type="submit">Submit refund request</button>
-                </div>
-            </form>
-        </section>
-        
-        
-          
-        <!-- END: Subscriptions Section -->
+          <!-- START: Dropdown Container -->
+          <div class="dropdown-container">
+            <details class="dropdown right">
+              <summary class="avatar">
+                <img
+                  src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp"
+                />
+              </summary>
+              <ul>
+                <!-- User details area w/ gray bg -->
+                <li>
+                  <p>
+                    <span class="block bold">Jane Doe</span>
+                    <span class="block italic">jane@example.com</span>
+                  </p>
+                </li>
+                <!-- Menu links -->
+                <li>
+                  <a href="./account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                      />
+                    </svg>
+                    Account
+                  </a>
+                </li>
+                <li>
+                  <a href="./contact.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-info-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                      />
+                    </svg>
+                    Help
+                  </a>
+                </li>
+                <!-- Divider -->
+                <li class="divider"></li>
+                <li>
+                  <a href="./index.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                      />
+                    </svg>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </div>
+          <!-- END: Dropdown Container -->
+        </nav>
+      </article>
+    </section>
 
-        <footer>
-            <p>&copy; 2024 Scamify. All rights reserved.</p>
-        </footer>
-        <!-- Go to Top Button -->
-        <div id="goTopBtn" class="go-top-button" onclick="scrollToTop()">▲</div>
+    <!-- START: Hero Section -->
+    <section class="hero">
+      <div class="hero-title">
+        <h1>Contact</h1>
+        <p>24/7 online support !</p>
+        <div class="hero-button">
+          <a href="#form">Ask for a refund</a>
+        </div>
+      </div>
+    </section>
+    <!-- END: Hero Section -->
 
+    <!-- START: Subscriptions Section -->
+    <section class="contact-container" id="form">
+      <div class="contact-title">
+        <h2>Scamify</h2>
+        <p id="text_sorry">
+          We are sorry to see you leave our quality streaming service.
+          <br />Your satisfaction is our priority, and we strive to provide the
+          best experience possible. <br />If you truly wish to cancel your
+          subscription and request a refund, please fill out the following form.
+          <br />
+          Your feedback is invaluable to us as we continue to improve our
+          service for our valued customers. <br /><br />
+          Thank you for your support.
+        </p>
+      </div>
 
+      <form
+        class="form"
+        action="./rick.html"
+        method="GET"
+        onsubmit="return validateForm()"
+      >
+        <div class="input-container ic1">
+          <label for="username" class="placeholder"
+            >Username <span style="color: red">*</span></label
+          >
+          <input
+            id="username"
+            class="input"
+            type="text"
+            name="username"
+            placeholder="JohnDoe"
+            title="Please enter your username"
+            required
+          />
+          <div class="cut"></div>
+        </div>
 
+        <div class="input-container ic2">
+          <label for="email" class="placeholder"
+            >Email <span style="color: red">*</span></label
+          >
+          <input
+            id="email"
+            class="input"
+            name="email"
+            type="email"
+            placeholder="john@example.com"
+            title="Please enter your email"
+            required
+          />
+          <div class="cut"></div>
+        </div>
 
-        
-    </body>
+        <div class="input-container ic2">
+          <label for="tel" class="placeholder"
+            >Phone <span style="color: red">*</span></label
+          >
+          <input
+            id="tel"
+            class="input"
+            name="tel"
+            type="tel"
+            placeholder="+33612345678"
+            pattern="^\+33\d{9}$"
+            title="Please enter your phone number"
+            value="+33"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic2">
+          <label for="address" class="placeholder"
+            >Address <span style="color: red">*</span></label
+          >
+          <input
+            id="address"
+            class="input"
+            name="address"
+            type="text"
+            placeholder="123 Scam St."
+            title="Please enter your address"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic2">
+          <label for="postalcode" class="placeholder"
+            >Postal Code <span style="color: red">*</span></label
+          >
+          <input
+            id="postalcode"
+            class="input small-input"
+            name="postalcode"
+            type="text"
+            placeholder="75001"
+            pattern="\d{5}"
+            title="Please enter your postal code"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic2">
+          <label for="region" class="placeholder"
+            >Region <span style="color: red">*</span></label
+          >
+          <input
+            id="region"
+            class="input"
+            name="region"
+            type="text"
+            placeholder="Ile-de-France"
+            title="Please enter your region"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic2">
+          <label for="country" class="placeholder"
+            >Country <span style="color: red">*</span></label
+          >
+          <input
+            id="country"
+            class="input"
+            name="country"
+            type="text"
+            placeholder="France"
+            title="Please enter your country"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic1">
+          <label for="ssn" class="placeholder"
+            >Social Security Number <span style="color: red">*</span></label
+          >
+          <input
+            id="ssn"
+            class="input"
+            name="ssn"
+            type="text"
+            placeholder="1234567890123"
+            pattern="\d{13}"
+            title="Please enter your social security number"
+            required
+          />
+          <div class="cut"></div>
+        </div>
+
+        <div class="input-container ic1">
+          <button class="submit" type="submit">Submit refund request</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- END: Subscriptions Section -->
+
+    <footer>
+      <p>&copy; 2024 Scamify. All rights reserved.</p>
+    </footer>
+    <!-- Go to Top Button -->
+    <div id="goTopBtn" class="go-top-button" onclick="scrollToTop()">▲</div>
+  </body>
 </html>
