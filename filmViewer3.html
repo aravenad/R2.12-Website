@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./filmlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="./script.js"></script>
+    <title>Scamify</title>
+  </head>
+  <body>
+    <section>
+      <article>
+        <nav>
+          <!-- START: Logo Container -->
+          <div class="logo">
+            <a href="./filmlist.html" class="icon-logo">
+              <img src="logo_size4.png" alt="logo" />
+            </a>
+          </div>
+          <!-- END: Logo Container -->
+          <!-- START: Dropdown Container -->
+          <div class="dropdown-container">
+            <details class="dropdown right">
+              <summary class="avatar">
+                <img
+                  src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp"
+                />
+              </summary>
+              <ul>
+                <!-- User details area w/ gray bg -->
+                <li>
+                  <p>
+                    <span class="block bold">Jane Doe</span>
+                    <span class="block italic">jane@example.com</span>
+                  </p>
+                </li>
+                <!-- Menu links -->
+                <li>
+                  <a href="./account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                      />
+                    </svg>
+                    Account
+                  </a>
+                </li>
+                <li>
+                  <a href="./contact.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-info-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                      />
+                    </svg>
+                    Help
+                  </a>
+                </li>
+                <!-- Divider -->
+                <li class="divider"></li>
+                <li>
+                  <a href="./index.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                      />
+                    </svg>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </div>
+          <!-- END: Dropdown Container -->
+        </nav>
+      </article>
+    </section>
+    <!-- START: Hero Section -->
+    <section class="hero">
+      <div class="hero-title">
+        <body>
+          <div class="posters-wrapper" style="height: 80%; top: 0">
+            <div style="display: flex">
+              <iframe
+                width="50%"
+                height="auto"
+                src="https://www.youtube.com/embed/7TavVZMewpY?rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div style="width: 50%; margin-left: 150px">
+                <h1 style="color: black; font-weight: 400">Mama Jack</h1>
+                <p style="color: black">
+                  Complications arise when a fugitive (Leon Schuster), who's
+                  masquerading as a woman, falls in love with his pretty boss
+                  (Mary-Anne Barlow).
+                </p>
+              </div>
+            </div>
+            <div style="width: 100%; margin-top: 50px">
+              <h1 style="color: black; font-weight: 400; font-size: 40pt">
+                Comments
+              </h1>
+              <div style="display: flex">
+                <div style="width: 50%">
+                  <h2 style="color: black">Jane Doe</h2>
+                  <p style="color: black">
+                    This movie is so funny! I love it! I can't stop laughing!
+                  </p>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="far fa-star rating-with-color"></i>
+                </div>
+                <div style="width: 50%">
+                  <h2 style="color: black">John Doe</h2>
+                  <p style="color: black">
+                    I love this movie! It's so funny! I can't stop laughing!
+                  </p>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star rating-with-color"></i>
+                  <i class="fas fa-star-half-alt rating-with-color"></i>
+                  <i class="far fa-star rating-with-color"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+      </div>
+    </section>
+    <!-- END: Hero Section -->
+    <footer>
+      <p>&copy; 2024 Scamify. All rights reserved.</p>
+    </footer>
+    <!-- Go to Top Button -->
+    <div id="goTopBtn" class="go-top-button" onclick="scrollToTop()">▲</div>
+  </body>
+</html>
