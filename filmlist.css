@@ -47,6 +47,7 @@ select {
 
 .hero-title p {
   color: #000;
+  font-size: 1.2em;
 }
 
 .poster-container {
@@ -54,6 +55,13 @@ select {
   border-radius: 8px;
   margin: 0 10px;
   background-color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: transform 0.3s;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .poster-container > img {
@@ -96,11 +104,15 @@ select {
 }
 
 .movie-desc {
-  white-space: nowrap;
   width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 200px;
   display: block;
+}
+
+.movie-desc:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
 }
 
 .movie-card-text {
@@ -152,7 +164,6 @@ select {
 .botted-space {
   height: 4px;
   width: 4px;
-  background-color: teal;
   border-radius: 100%;
   position: relative;
   top: 6px;
@@ -168,6 +179,20 @@ select {
 
 .header-leading-label {
   float: left;
+}
+
+#searchMovie {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+}
+
+#searchMovie:focus {
+  border: 3px solid #555;
+  outline: none;
 }
 
 .header-filter-tag {
