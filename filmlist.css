@@ -36,6 +36,15 @@ select {
   text-align: center;
 }
 
+section.hero {
+  width: 80%;
+  height: 165vh;
+  text-align: center;
+  margin-bottom: 150px;
+  background-color: #232224;
+  border-radius: 6px;
+}
+
 .hero-title {
   display: flex;
   flex-direction: column;
