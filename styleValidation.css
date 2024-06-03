@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+.checkmark {
+    display: block;
+    width: 24px;
+    height: 48px;
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    opacity: 0;
+    animation: drawCheckmark 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes drawCheckmark {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 24px;
+        height: 48px;
+        opacity: 1;
+    }
+}
+
+.success-message {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -223,7 +223,16 @@
     border-radius: 6px;
   }
 
-  section.hero div.hero-title {
+  section.hero_account {
+    width: 80%;
+    height: 200vh;
+    text-align: center;
+    margin-bottom: 150px;
+    background-color: #232224;
+    border-radius: 6px;
+  }
+
+  .hero-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,21 +240,29 @@
     height: 100%;
   }
 
-  section.hero div.hero-title h1 {
+  .hero-title_account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+  }
+
+  .hero-title h1, .hero-title_account h1 {
     font-size: 7rem;
     color: #fff;
     margin: 0 0 30px 0;
     padding: 0;
   }
 
-  section.hero div.hero-title p {
+  .hero-title p {
     font-size: 1.5rem;
     color: #fff;
     margin: 0 0 20px 0;
     padding: 0;
   }
 
-  section.hero div.hero-button {
+  .hero-button {
     height: 64px;
     font: normal normal 700 1em/4em Arial,sans-serif;
     overflow: hidden;
@@ -254,26 +271,26 @@
     border-radius: 20px;
   }
 
-  section.hero div.hero-button:hover {
+  .hero-button:hover {
     background-color: #003D60;
   }
 
-  section.hero div.hero-button a {
+  .hero-button a {
     color: white;
     text-decoration: none;
     text-align: center;
     display: block;
   }
 
-  section.hero div.hero-button a:hover {
+  .hero-button a:hover {
     text-decoration: none;
   }
 
-  section.hero div.hero-button .first-link {
+  .hero-button .first-link {
     margin-top: 0em;
   }
 
-  section.hero div.hero-button, .first-link {
+  .hero-button, .first-link {
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -281,13 +298,13 @@
     transition: 0.3s;
   }
 
-  section.hero div.hero-button:hover .first-link {
+  .hero-button:hover .first-link {
     margin-top: -4em;
   }
 
   section.subscriptions {
     width: 80%;
-    height: 84vh;
+    height: 120vh;
     text-align: center;
     background-color: #232224;
     border-radius: 6px;
@@ -401,7 +418,6 @@
   }
 
   section.subscriptions div.subscription-cards div.card div.card-button {
-    height: 64px;
     font: normal normal 700 1em/4em Arial,sans-serif;
     overflow: hidden;
     width: 200px;
