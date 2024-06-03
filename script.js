@@ -88,3 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.getElementById('upload-button').addEventListener('click', function() {
+  document.getElementById('file-input').click();
+});
+
+document.getElementById('file-input').addEventListener('change', function() {
+  const fileName = this.files[0].name;
+  alert('Fichier sélectionné : ' + fileName);
+});

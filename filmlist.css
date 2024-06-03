@@ -47,7 +47,7 @@ select {
 
 .hero-title p {
   color: #000;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: left;
   margin: 20px 0;
 }
@@ -194,6 +194,23 @@ select {
 
 .header-leading-label {
   float: left;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#upload-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
 #searchMovie {
