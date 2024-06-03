@@ -20,6 +20,8 @@
   grid-column: span 2; /* Username spans both columns */
 }
 
+
+
 .input-container.ic2 {
   grid-column: span 1; /* Each input spans one column */
 }
