@@ -1,63 +1,76 @@
 .form {
-    background-color: #15172b;
-    border-radius: 20px;
-    box-sizing: border-box;
-    height: 500px;
-    padding: 20px;
-    width: 320px;
-  }
-  
-  
-  .input-container {
-    height: 50px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .ic1 {
-    margin-top: 40px;
-    padding-left: 250px;
-    padding-right: 250px;
-  }
-  
-  .ic2 {
-    margin-top: 30px;
-    padding-left: 250px;
-    padding-right: 250px;
-  }
-  
-  .input {
-    background-color: #303245;
-    border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    font-size: 18px;
-    height: 100%;
-    outline: 0;
-    padding: 4px 20px 0;
-    width: 100%;
-  }
-  
-label{
-    color: #FFFFFF;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container.ic1 {
+  grid-column: span 2; /* Username spans both columns */
+}
+
+
+
+.input-container.ic2 {
+  grid-column: span 1; /* Each input spans one column */
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 16px;
+  height: 50px;
+  outline: 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
+label {
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .submit {
-    background-color: #08d;
-    border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    cursor: pointer;
-    font-size: 18px;
-    height: 50px;
-    margin-top: 38px;
-    // outline: 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .submit:active {
-    background-color: #06b;
-  }
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  grid-column: span 2; /* Submit button spans both columns */
+  margin-top: 20px;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+
+.submit:hover {
+  background-color: #06b;
+}
+
+
+
+.small-input {
+  width: 100%; /* Ensures small inputs fit the grid */
+}

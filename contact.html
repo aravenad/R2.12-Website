@@ -99,36 +99,65 @@
                 <h2>Scamify</h2>
                 <p>Fill the form</p>
             </div>
-                
-            <form action="./rick.html" method="GET">
-            
+        
+            <form class="form" action="./rick.html" method="GET" onsubmit="return validateForm()">
                 <div class="input-container ic1">
-                    <label for="firstname" class="placeholder">Username</label>
-                    <input id="firstname" class="input" type="text" placeholder=" ">
+                    <label for="username" class="placeholder">Username <span style="color: red;">*</span></label>
+                    <input id="username" class="input" type="text" name="username" placeholder="JohnDoe" title="Please enter your username" required>
                     <div class="cut"></div>
                 </div>
-                 
+        
                 <div class="input-container ic2">
-                    <label for="lastname" class="placeholder">Email</label>
-                    <input id="lastname" class="input" name="email" type="email" placeholder=" ">
+                    <label for="email" class="placeholder">Email <span style="color: red;">*</span></label>
+                    <input id="email" class="input" name="email" type="email" placeholder="john@example.com" title="Please enter your email" required>
                     <div class="cut"></div>
                 </div>
-
+        
+        
                 <div class="input-container ic2">
-                    <label for="message" class="placeholder">Message</label>
-                    <input id="message" class="input" name="message" type="text" placeholder=" ">
+                    <label for="tel" class="placeholder">Phone <span style="color: red;">*</span></label>
+                    <input id="tel" class="input" name="tel" type="tel" placeholder="+33612345678" pattern="^\+33\d{9}$" title="Please enter your phone number" required>
                     <div class="cut"></div>
                 </div>
-
+        
                 <div class="input-container ic2">
+                    <label for="address" class="placeholder">Address <span style="color: red;">*</span></label>
+                    <input id="address" class="input" name="address" type="text" placeholder="123 Scam St." title="Please enter your address" required>
+                    <div class="cut"></div>
+                </div>
+        
+                <div class="input-container ic2">
+                    <label for="postalcode" class="placeholder">Postal Code <span style="color: red;">*</span></label>
+                    <input id="postalcode" class="input small-input" name="postalcode" type="text" placeholder="75001" pattern="\d{5}" title="Please enter your postal code" required>
+                    <div class="cut"></div>
+                </div>
+        
+                <div class="input-container ic2">
+                    <label for="region" class="placeholder">Region <span style="color: red;">*</span></label>
+                    <input id="region" class="input" name="region" type="text" placeholder="Ile-de-France" title="Please enter your region" required>
+                    <div class="cut"></div>
+                </div>
+        
+                <div class="input-container ic2">
+                    <label for="country" class="placeholder">Country <span style="color: red;">*</span></label>
+                    <input id="country" class="input" name="country" type="text" placeholder="France" title="Please enter your country" required>
+                    <div class="cut"></div>
+                </div>
+        
+                <div class="input-container ic1">
+                    <label for="ssn" class="placeholder">Social Security Number <span style="color: red;">*</span></label>
+                    <input id="ssn" class="input" name="ssn" type="text" placeholder="1234567890123" pattern="\d{13}" title="Please enter your social security number" required>
+                    <div class="cut"></div>
+                </div>
+        
+                <div class="input-container ic1">
                     <button class="submit" type="submit">Submit refund request</button>
                 </div>
-            
             </form>
-
-
-            </div>
         </section>
+        
+        
+          
         <!-- END: Subscriptions Section -->
 
         <footer>
@@ -136,5 +165,10 @@
         </footer>
         <!-- Go to Top Button -->
         <div id="goTopBtn" class="go-top-button" onclick="scrollToTop()">▲</div>
+
+
+
+
+        
     </body>
 </html>

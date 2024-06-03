@@ -34,4 +34,41 @@ document.addEventListener("DOMContentLoaded", function() {
       document.documentElement.scrollTop = 0;
     });
   });
+
+
+
+
+  function validateForm() {
+    const tel = document.getElementById("tel").value;
+    const postalcode = document.getElementById("postalcode").value;
+    const ssn = document.getElementById("ssn").value;
+  
+    const telPattern = /^\+33\d{9}$/;
+    const postalcodePattern = /^\d{5}$/;
+    const ssnPattern = /^\d{13}$/;
+  
+    if (!telPattern.test(tel)) {
+      alert("Le numéro de téléphone doit commencer par +33 suivi de 9 chiffres.");
+      return false;
+    }
+  
+    if (!postalcodePattern.test(postalcode)) {
+      alert("Le code postal doit comporter 5 chiffres.");
+      return false;
+    }
+  
+    if (!ssnPattern.test(ssn)) {
+      alert("Le numéro de sécurité sociale doit comporter 13 chiffres.");
+      return false;
+    }
+  
+    return true;
+  }
+
+
+
+
+  
+  
+
   
